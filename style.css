@@ -96,9 +96,6 @@ nav{
 }
 
 #later{
-    border-style: dotted;
-    border-width: 0.01em;
-    border-radius: 10%;
     flex-shrink: 1;
     flex-basis: 20%;
 }

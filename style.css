@@ -31,20 +31,20 @@ h3{
 #headline,#country{
     width: 100%;
     text-align: center;
-    font-size: 3.75vh;
+    font-size: 3.5vh;
     /*background-color: #f1e5d3;*/
     color: #888786;
 }
 
 nav{
-    height: 7vh;
+    height: 8vh;
     width: 100%;
     justify-content: left;
     /*background-color: #d8c3a5;*/
     color: #585856;
     /*background-color: #f1e5d3;*/
     border-radius: 4%;
-    font-size: 4.75vh;
+    font-size: 4.0vh;
     font-family: monospace;
     font-style: italic;
     padding: 1vh;

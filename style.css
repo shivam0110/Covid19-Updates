@@ -49,6 +49,7 @@ nav{
     font-style: italic;
     padding: 1vh;
     padding-left: 5%;
+    display: block;
 }
 
 .nthg{

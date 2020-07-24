@@ -28,6 +28,12 @@ h3{
     color: #e98074;
     font-style: oblique;
 }
+#pic{
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    object-fit: scale-down;
+}
 #headline,#country{
     width: 100%;
     text-align: center;
@@ -65,8 +71,9 @@ nav{
     border: .001em;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-evenly;
+    align-content: stretch;
 }
 
 .GCase-upper, .GCase-lower, .CCase-upper, .CCase-lower{
@@ -85,10 +92,17 @@ nav{
     flex-flow: nowrap;
     justify-content: space-evenly;
     align-content: stretch;
-    
+    flex-basis:15%;
 }
+
+#later{
+    border-style: dotted;
+    border-width: 0.01em;
+    flex-shrink: 1;
+    flex-basis: 20%;
+}
+
 .footer{
-    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;

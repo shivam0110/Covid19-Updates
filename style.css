@@ -57,7 +57,7 @@ nav{
 
 .GCases, .CCases{
     padding: 20px;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     border: .001em;
     display: flex;
@@ -68,7 +68,7 @@ nav{
 
 .GCase-upper, .GCase-lower, .CCase-upper, .CCase-lower{
     width: 100%;
-    height: 15vh;    
+    height: 20vh;    
     padding: 5px;
     background-color: #d8c3a53d;
     border-radius: 15px;

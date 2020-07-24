@@ -15,16 +15,16 @@ body {
 }
 
 h1{
-    font-size: 150%;
+    font-size: 2.75vh;
     font-style: italic;
 }
 h2{
-    font-size: 125%;
+    font-size: 2.25vh;
     color: #e98074;
     font-style: oblique;
 }
 h3{
-    font-size: 100%;
+    font-size: 2vh;
     color: #e98074;
     font-style: oblique;
 }

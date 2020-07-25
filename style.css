@@ -45,7 +45,7 @@ h3{
 }
 
 nav{
-    height: 8vh;
+    /*height: 8vh;*/
     width: 100%;
     justify-content: left;
     /*background-color: #d8c3a5;*/
@@ -120,4 +120,8 @@ nav{
 hr{
     width: 75%;
     background-color: #e98074d7;
+}
+
+.live{
+    color: #ff0000;
 }

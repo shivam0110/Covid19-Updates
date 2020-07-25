@@ -95,7 +95,7 @@ nav{
     flex-basis:15%;
 }
 
-#later{
+.later{
     flex-shrink: 1;
     flex-basis: 20%;
 }
@@ -116,4 +116,8 @@ nav{
     font-style: italic;
     padding: 1vh;
     padding-left: 5%;
+}
+hr{
+    width: 75%;
+    background-color: #e98074d7;
 }

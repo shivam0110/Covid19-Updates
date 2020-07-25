@@ -47,6 +47,7 @@ const api2 = `https://ipapi.co/json/`;
             //console.log(data);
             var region = data.region;
             var country = data.country_name;
+            document.getElementById('country').textContent = country;
 
             const api3 = `https://api.covid19api.com/country/${country}/status/confirmed/live`;
             const api4 = `https://api.covid19api.com/country/${country}/status/deaths/live`;

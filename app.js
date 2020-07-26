@@ -15,9 +15,7 @@ fetch(api1)
     .then(response =>{
         return response.json();
     })
-    .then(data=>{
-        
-        console.log(data);
+    .then(data=>{        
         document.getElementById('gtc2').textContent = commas(data.results[0].total_cases);
         document.getElementById('gd2').textContent = commas(data.results[0].total_deaths);
         document.getElementById('grc2').textContent = commas(data.results[0].total_recovered);        

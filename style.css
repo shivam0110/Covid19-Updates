@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #4a5358;
+    background-color: #364852;
     color: #0e0f14;
 }
 
@@ -162,6 +162,6 @@ hr{
     background-color: #322f3d;
     color: #87556f;
     width: 4em;
-    height: 4.5vh;
+    height: 5vh;
     cursor: pointer;
 }

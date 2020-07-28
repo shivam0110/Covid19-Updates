@@ -11,22 +11,22 @@ body {
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     background-color: #ffdecf;
-    color: #5e6f64;
+    color: #00203f;
 }
 
 h1{
     font-size: 2.5vh;
     font-style: italic;
-    color: #3f4441;
+    color: #1f2421;
 }
 h2{
     font-size: 2.25vh;
-    color: #5e6f64;
+    color: #3e4741;
     font-style: oblique;
 }
 h3{
     font-size: 2vh;
-    color: #5e6f64;
+    color: #3e4741;
     font-style: oblique;
 }
 #pic{
@@ -50,7 +50,7 @@ nav{
     width: 100%;
     justify-content: left;
     /*background-color: #d8c3a5;*/
-    color: #3f4441;
+    color: #18191f;
     /*background-color: #f1e5d3;*/
     background-color: #ba7967;
     border-radius: 4%;
@@ -111,7 +111,7 @@ nav{
     justify-content: center;
     text-align: center;
     background-color: #ba7967;
-    color: #3f4441;
+    color: #18191f;
     font-size: 2vh;
     font-family: monospace;
     font-style: italic;
@@ -149,7 +149,7 @@ hr{
     width: 110%;
     padding: 5px;
     background-color: #f8eee1;
-    color: #f8eee1;
+    color: #3e4741;
     float: left;
     text-align: center;
     align-items: center;
@@ -162,9 +162,9 @@ hr{
 }
 #button{
     background-color: #ba7967;
-    color: #3f4441;
+    color: #1b1c25;
     border-radius: 30%;
     width: 4em;
-    height: 4.5vh;
+    height: 4vh;
     cursor: pointer;
 }

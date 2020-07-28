@@ -19,7 +19,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 
-        <nav>C<img id="pic" src="logo.png" height= 25px width= 55px/>VID-19: Updates <div class="live">LIVE</div></nav>
+        <nav>C<img id="pic" src="logo.png" height= 25px width= 55px/>VID-19: Updates</nav>
 
         <div class="nthg"></div>
 
@@ -43,11 +43,11 @@
 
         <div class="container">
             <div class="row">
-                <form class="col-md-4">
+                <form class="col-md-4" id="search">
                     <select class="form-control select2" id="options" onclick="serach_country()">
-                       <option>--Select Country--</option> 
+                       <option id="options">-Select Country-</option> 
+                       <input type="button" id ="button" value="   >>   " onclick="serach_country()">
                     </select>
-                    <input type="button" id ="button" value="   >>   " onclick="serach_country()">
                 </form>
              </div>
         </div>       

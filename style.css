@@ -10,23 +10,23 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #4b5d67;
-    color: #0e0f14;
+    background-color: #ffdecf;
+    color: #5e6f64;
 }
 
 h1{
     font-size: 2.5vh;
     font-style: italic;
-    color: #050505;
+    color: #3f4441;
 }
 h2{
     font-size: 2.25vh;
-    color: #87556f;
+    color: #5e6f64;
     font-style: oblique;
 }
 h3{
     font-size: 2vh;
-    color: #87556f;
+    color: #5e6f64;
     font-style: oblique;
 }
 #pic{
@@ -50,9 +50,9 @@ nav{
     width: 100%;
     justify-content: left;
     /*background-color: #d8c3a5;*/
-    color: #0e0f14;
+    color: #3f4441;
     /*background-color: #f1e5d3;*/
-    background-color: #322f3d;
+    background-color: #ba7967;
     border-radius: 4%;
     font-size: 4.0vh;
     font-family: monospace;
@@ -80,7 +80,7 @@ nav{
     width: 100%;
     height: 20vh;    
     padding: 5px;
-    background-color: #322f3d;
+    background-color: #ba7967;
     border-radius: 15px;
 
     text-align: center;
@@ -110,8 +110,8 @@ nav{
     width: 100%;
     justify-content: center;
     text-align: center;
-    background-color: #322f3d;
-    color: #060608;
+    background-color: #ba7967;
+    color: #3f4441;
     font-size: 2vh;
     font-family: monospace;
     font-style: italic;
@@ -120,8 +120,8 @@ nav{
 }
 hr{
     width: 75%;
-    background-color: #060608;
-    color: #060608;
+    background-color: #ffdecf;
+    color: #ffdecf;
     border-style: dashed;
 }
 
@@ -161,8 +161,8 @@ hr{
     align-content: stretch;
 }
 #button{
-    background-color: #322f3d;
-    color: #87556f;
+    background-color: #ba7967;
+    color: #3f4441;
     border-radius: 30%;
     width: 4em;
     height: 4.5vh;

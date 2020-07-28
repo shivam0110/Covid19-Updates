@@ -130,8 +130,8 @@ hr{
     height:34px !important;
 }
 .select2-container--default .select2-selection--single{
-         border: 1px solid #ccc !important; 
-     border-radius: 0px !important; 
+    border: 1px solid #ccc !important; 
+    border-radius: 0px !important; 
 }
 /*.container{
     width: 100%;
@@ -148,7 +148,8 @@ hr{
 #options{
     width: 110%;
     padding: 5px;
-    background-color: #f8eee1;
+    /*background-color: #f8eee1;*/
+    background-color: #ba7967;
     color: #3e4741;
     float: left;
     text-align: center;
@@ -166,5 +167,21 @@ hr{
     border-radius: 30%;
     width: 4em;
     height: 4vh;
+    font-weight: 900;
     cursor: pointer;
 }
+/*
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #020202 !important;
+    line-height: 28px !important;
+}
+.select2-container--default .select2-selection--single{
+    border: #020202 !important;
+    border-style: double;
+    border-width: 1vh;
+    color: #0e0f13 !important;
+    background-color: #ba7967 !important;
+    text-align: center;
+    font-weight: bold;
+    height: 4.25vh;
+}*/

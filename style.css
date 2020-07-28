@@ -163,7 +163,8 @@ hr{
 #button{
     background-color: #322f3d;
     color: #87556f;
+    border-radius: 30%;
     width: 4em;
-    height: 5vh;
+    height: 4.5vh;
     cursor: pointer;
 }

@@ -120,8 +120,9 @@ nav{
 }
 hr{
     width: 75%;
-    background-color: #4b5d67;
-    color: #4b5d67;
+    background-color: #060608;
+    color: #060608;
+    border-style: dashed;
 }
 
 

@@ -104,7 +104,7 @@ nav{
     left: 0;
     bottom: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     
     height: 4vh;
     width: 100%;

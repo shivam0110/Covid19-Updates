@@ -117,9 +117,40 @@ nav{
 }
 hr{
     width: 75%;
-    background-color: #e98074d7;
+    background-color: #e98074;
 }
 
 .live{
     color: #ff0000;
+}
+
+.select2-container .select2-selection--single{
+    height:34px !important;
+}
+.select2-container--default .select2-selection--single{
+         border: 1px solid #ccc !important; 
+     border-radius: 0px !important; 
+}
+
+#options{
+    width: 200%;
+    padding: 5px;
+    background-color: #f8eee1;
+    color: #f8eee1;
+    float: left;
+    text-align: center;
+    align-items: center;
+    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+#button{
+    background-color: #f8eee1;
+    width: 4em;
+    height: 4.25vh;
+    border-radius: 30%;
+    cursor: pointer;
 }

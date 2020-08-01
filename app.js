@@ -132,14 +132,3 @@ function serach_country(){
         count(sel.options[sel.selectedIndex].value);
     }
 }
-
-
-const api911 = `https://newsapi.org/v2/everything?q=coronavirus&apiKey=bd7fac69b8024aa0bbe249febd34525e`;
-fetch(api911)
-    .then(response =>{
-        return response.json();
-    })
-    .then(data=>{
-        
-        console.log(data);
-});   

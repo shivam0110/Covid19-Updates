@@ -104,24 +104,34 @@ h3{
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 1%;
-    border-radius: 5%;
+    padding-left: 2.5%;
     border: 0.01vh;
     box-shadow: 1px 2px 1px 1px #030322;
+    margin-bottom: 4vh;
+    margin-left: 2%;
+    margin-top: 4vh;
+    margin-right: 0%;
 }
 
 #info-h2{
     color: #910b0b;
+    font-size: 1.85rem;
 }
 
 #news-section-heading{
     width: 100%;
+    font-size: 1.85rem;
     text-align: center;
 }
 
 #news-title{
     color: #aa0000;
+    font-size: 1.5rem;
 }
+#news-excerpt{
+    font-size: 1.25rem;
+}
+         
 
 #footer{
     width: 100%;
@@ -157,4 +167,12 @@ h3{
 }
 #search-button:hover{
     cursor: pointer;
+}
+
+hr{
+    width: 85%;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
 }

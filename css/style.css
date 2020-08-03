@@ -116,6 +116,7 @@ h3{
     margin-left: 2%;
     margin-top: 4vh;
     margin-right: 2%;
+    display: none;
 }
 
 #info-h2{
@@ -123,12 +124,15 @@ h3{
     font-size: 1.85rem;
 }
 
-#news-section-heading{
+#news-section-heading, #info-h1{
     width: 100%;
     font-size: 1.85rem;
     text-align: center;
+    text-decoration: underline;
 }
-
+#dd:hover{
+    cursor: pointer;
+}
 #news-title{
     color: #aa0000;
     font-size: 1.5rem;
@@ -174,8 +178,3 @@ h3{
     cursor: pointer;
 }
 
-hr{
-    width: 85%;
-    margin-right: 10%;
-    margin-left: 5%;
-}

@@ -5,76 +5,188 @@
 		<meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />       
-		<meta name="description" content="Corona virus cases counter, website for corona cases update" />
-		<meta name="keywords" content="Corona virus cases counter, website for corona cases update" />
-		<link rel="stylesheet" href="style.css" />
+		<meta name="description" content="Corona virus cases counter, tracker website for corona cases update" />
+		<meta name="keywords" content="Corona virus cases counter, tracker website for corona cases update" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+
         <link rel ="icon" type="image/png" href="logo1.PNG" >
-        
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-	</head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    
 	<body>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+        <nav class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+            <h1 id="nav-h1">C<img src="logo.png" width="20px" class="logo">RONA - TRACKER</img></h1>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="#headline" class="nav-links">Global</a>
+                </li>
+                <li>
+                    <a href="#search-box" class="nav-links">Country</a>
+                </li>
+                <li>
+                    <a href="#information" class="nav-links">Information</a>
+                </li>
+                <li>
+                    <a href="#news-section-heading" class="nav-links">News</a>
+                </li>
+                <li>
+                    <a href="#footer" class="nav-links">Footer</a>
+                </li>
+            </ul>
+        </nav>
 
+    <div class="nthg"></div>
+    <div class="nthg"></div>
+    <div class="nthg"></div>
 
-        <nav>C<img id="pic" src="logo.png" height= 25px width= 55px/>VID-19: Updates</nav>
-
-        <div class="nthg"></div>
-
+        <h1 id = "headline">Global   <i class="fa fa-globe" aria-hidden="true"></i></h1><br>
         <div class="GCases">
-            <h1 id = "headline">Global</h1><br>
-            <div class="GCase-upper">
-                <div class="later" ><h1>Total Cases:</h1><br><h2 id="gtc2">-----</h2><h3 id="gtc3">+---</h3></div>
+            <div class="GCase">
+                <div class="later" ><h1>Confirmied:</h1><br><h2 id="gtc2">-----</h2><h3 id="gtc3">+---</h3></div>
                 <div class="later" ><h1>Deaths:</h1><br><h2 id="gd2">-----</h2><h3 id="gd3">+---</h3></div>
-                <div class="later" ><h1>Active Cases:</h1><br><h2 id="gac2">-----</h2><h3 id="gac3">+---</h3></div>
+                <div class="later" ><h1>Recovered:</h1><br><h2 id="grc2">-----</h2><h3 id="grc3">+---</h3></div>
             </div>
-            <hr>
-            <div class="GCase-lower">
-                <div class="later" ><h1>Recovered Cases:</h1><br><h2 id="grc2">-----</h2><h3 id="grc3">+---</h3></div>
-                <div class="later" ><h1>Closed Cases:</h1><br><h2 id="gcc2">-----</h2><h3 id="gcc3">+---</h3></div>
+            <div class="Gstats">
+                <div class="gfrate" >
+                    <h1 id="gfrh1">Fatality Rate:</h1>
+                    <canvas id="gfchart" width="100%" ></canvas>
+                </div>
+                <div class="grrate" >
+                    <h1 id=grrh1>Recovery Rate:</h1>
+                    <canvas id="grchart" width="100%"></canvas>
+                </div>
             </div>
         </div>
+        <br>
 
         <div class="nthg"></div>
         <div class="nthg"></div>
         <div class="nthg"></div>
 
-        <div class="container">
-            <div class="row">
-                <form class="col-md-4" id="search">
-                    <select class="form-control select2" id="options" onclick="serach_country()">
-                       <option id="options">-Select Country-</option>
-                    </select>
-		<input type="button" id ="button" value="   >>   " onclick="serach_country()">
-                </form>
-             </div>
+        <div class="search">
+                <datalist id="country-list">
+                    <option value="usa">
+                  </datalist>
+                <input type="text" name="Search country" id="search-box" placeholder="Search Country" list="country-list" onkeypress="return runScript(event)"/></input>
+                <i class="fa fa-search" id="search-button"aria-hidden="true" onclick="serach_country();"></i>
         </div>       
         
         <div class="nthg"></div>
         <div class="nthg"></div>
         <div class="nthg"></div>
 
+
+        <h1 id = "country">Country   <i class="fa fa-flag" aria-hidden="true"></i></h1><br>
         <div class="CCases">
-            <h1 id = "country">Country</h1><br>
-            <div class="CCase-upper">
-                <div class="later" id="ctc"><h1>Total Cases:</h1><br><h2 id="ctc2">-----</h2><h3 id="ctc3">+---</h3></div>
+            <div class="CCase">
+                <div class="later" id="ctc"><h1>Confirmed:</h1><br><h2 id="ctc2">-----</h2><h3 id="ctc3">+---</h3></div>
                 <div class="later" id="cd"><h1>Deaths:</h1><br><h2 id="cd2">-----</h2><h3 id="cd3">+---</h3></div>
-                <div class="later" id="cac"><h1>Active Cases:</h1><br><h2 id="cac2">-----</h2><h3 id="cac3">+---</h3></div>
+                <div class="later" id="crc"><h1>Recovered:</h1><br><h2 id="crc2">-----</h2><h3 id="crc3">+---</h3></div>
             </div>
-            <hr>
-            <div class="CCase-lower">
-                <div class="later" ><h1>Recovered Cases:</h1><br><h2 id="crc2">-----</h2><h3 id="crc3">+---</h3></div>
-                <div class="later" ><h1>Closed Cases:</h1><br><h2 id="ccc2">-----</h2><h3 id="ccc3">+---</h3></div>
+            <div class="Cstats">
+                <div class="cfrate" >
+                    <h1 id="cfrh1">Fatality Rate:</h1>
+                    <canvas id="cfchart" width="100%"></canvas>
+                </div>
+                <div class="crrate" >
+                    <h1 id="crrh1">Recovery Rate:</h1>
+                    <canvas id="crchart" width="100%"></canvas>
+                </div>
             </div>
+        </div>
+        <br>
+
+        <div class="Graph">
+            <div class="cngra"><canvas id="cngraph"></canvas></div>
+            <div class="cdgra"><canvas id="cdgraph"></canvas></div>
         </div>
 
         <div class="nthg"></div>
         <div class="nthg"></div>
+        <div class="nthg"></div>
 
-        <div class="footer">&#60/&#62 by Shivam</div>
+        <div id="information">
+            <h1>Information</h1>
+            <br><br><br>
+            <h2>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.<br>
+                Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+            </h2>
+            <br><hr><br>
+            <h2 id="info-h2">
+                HOW IT SPREADS
+            </h2><br>
+            <h3>
+                The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.<br>
+                You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.
+            </h3>
+            <br><hr><br>
+            <h2 id="info-h2">
+                Symptoms
+            </h2><br>
+            <h3>
+                Most common symptoms:<br>
+                    <li>fever</li>
+                    <li>dry cough</li>
+                    <li>tiredness</li>
+                <br>
+                Less common symptoms:
+                    <li>aches and pains</li>
+                    <li>sore throat</li>
+                    <li>diarrhoea</li>
+                    <li>conjunctivitis</li>
+                    <li>headache</li>
+                    <li>loss of taste or smell</li>
+                    <li>a rash on skin, or discolouration of fingers or toes</li><br>
+                Serious symptoms:
+                    <li>difficulty breathing or shortness of breath</li>
+                    <li>chest pain or pressure</li>
+                    <li>loss of speech or movement</li>
+            </h3>
+            <br><hr><br>
+            <h2 id="info-h2">
+                Prevention
+            </h2><br>
+            <h3>
+                <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+                <li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+                <li>Wear a mask when physical distancing is not possible.</li>
+                <li>Don’t touch your eyes, nose or mouth.</li>
+                <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+                <li>Stay home if you feel unwell.</li>
+                <li>If you have a fever, cough and difficulty breathing, seek medical attention.</li>
+            </h3>
+            <br><hr><br>
+        </div>       
 
-        <script>$('.select2').select2();</script>
-        <script src="app.js"></script>         
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+
+        <h1 id="news-section-heading">World Coronavirus News Updates</h1>
+        <div id="news-section">
+        </div>
+
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+        <div class="nthg"></div>
+
+
+        <div id="footer">&#60/&#62 by Shivam</div>
+
+        <script src="./js/app.js"></script>
+        <script src="./js/country.js"></script>
+        <script src="./js/global.js"></script>
+        <script src="./js/news.js"></script>
+
     </body>
 </html>

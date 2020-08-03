@@ -49,7 +49,8 @@ h3{
 .GCases, .CCases{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(376px,1fr));
-    grid-column-gap: 10px;
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
     padding-left: 4%;
     padding-right: 4%;
 }
@@ -86,6 +87,8 @@ h3{
 .Graph{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(376px,1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
 }
 
 .search{
@@ -104,9 +107,9 @@ h3{
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 2.5%;
+    padding: 2.5%;
     border: 0.01vh;
-    box-shadow: 1px 2px 1px 1px #030322;
+    box-shadow: 1px 1px 1px 1px #030322;
     margin-bottom: 4vh;
     margin-left: 2%;
     margin-top: 4vh;
@@ -171,8 +174,6 @@ h3{
 
 hr{
     width: 85%;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
+    margin-right: 10%;
+    margin-left: 5%;
 }

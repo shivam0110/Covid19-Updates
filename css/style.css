@@ -94,7 +94,6 @@ h3{
 }
 
 .cngra, .cdgra{
-    margin-bottom: 15px;
     margin-top: 5px;
     border-radius: 5%;
     border: 0.01vh;
@@ -104,11 +103,8 @@ h3{
 #news-section, #information{
     width: 100%;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    padding: 5%;
-    margin-left: 1%;
-    margin-right: 1%;
+    padding: 1%;
     border-radius: 5%;
     border: 0.01vh;
     box-shadow: 1px 2px 1px 1px #030322;

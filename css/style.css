@@ -32,7 +32,9 @@ h3{
     color: #2c2828;
     font-style: oblique;
 }
-
+.fa {
+    color: #db2323;
+}
 .nthg{
     height: 3vh;
 }
@@ -126,7 +128,7 @@ h3{
 
 #news-section-heading, #info-h1{
     width: 100%;
-    font-size: 1.85rem;
+    font-size: 2rem;
     text-align: center;
     text-decoration: underline;
 }
@@ -177,4 +179,3 @@ h3{
 #search-button:hover{
     cursor: pointer;
 }
-

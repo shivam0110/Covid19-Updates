@@ -12,7 +12,7 @@ main {
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
     background-color: #fff0f0;
-    padding: 1%;
+    margin: 0.5%;
 }
 a{
     text-decoration: none;

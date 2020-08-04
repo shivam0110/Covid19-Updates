@@ -7,11 +7,12 @@ html {
     scroll-padding-top: 80px; /* height of sticky header */
     font-size: 1.5vh;
   }
-body {
+main {
     justify-content: start;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #ffffff;
+    background-color: #fff0f0;
+    padding: 1%;
 }
 a{
     text-decoration: none;
@@ -179,3 +180,4 @@ h3{
 #search-button:hover{
     cursor: pointer;
 }
+

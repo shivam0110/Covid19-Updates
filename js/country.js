@@ -65,7 +65,7 @@ function count (country){
                         ],
                         datasets: [{
                             data: [
-                            (crc2/ctc2*100).toFixed(2), (100-(crc2/ctc2*100).toFixed(2))
+                            (crc2/ctc2*100).toFixed(2), (100-(crc2/ctc2*100)).toFixed(2)
                             ],
                             backgroundColor: [
                             "#32b419",

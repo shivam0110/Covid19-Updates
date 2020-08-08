@@ -110,7 +110,7 @@ function count (country){
                     var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        labels: label,
+                        //labels: label,
                         datasets: [{
                         data: condata,
                         label: 'Confirmed' ,

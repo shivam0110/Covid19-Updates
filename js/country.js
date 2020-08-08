@@ -120,9 +120,9 @@ function count (country){
                         options: {
                             scales: {
                                 xAxes: [{
-                                    
+                                    label: {
                                         display: false //this will remove only the label
-                                    
+                                    }
                                 }]
                             }
                         }

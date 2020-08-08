@@ -110,7 +110,7 @@ function count (country){
                     var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
-                        //labels: label,
+                        labels: label,
                         datasets: [{
                         data: condata,
                         label: 'Confirmed' ,
@@ -118,8 +118,12 @@ function count (country){
                         borderColor: '#2c2828',
                         }],
                         options: {
-                            legend: {
-                                display: false
+                            scales: {
+                                xAxes: [{
+                                    ticks: {
+                                        display: false //this will remove only the label
+                                    }
+                                }]
                             }
                         }
                     }

@@ -51,7 +51,7 @@ h3{
 
 .GCases, .CCases{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(376px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     grid-column-gap: 15px;
     grid-row-gap: 30px;
     padding-left: 4%;
@@ -91,7 +91,7 @@ h3{
 
 .Graph{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(376px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     grid-column-gap: 15px;
     grid-row-gap: 30px;
 }
@@ -132,6 +132,7 @@ h3{
     font-size: 2rem;
     text-align: center;
     text-decoration: underline;
+    cursor: pointer;
 }
 #dd:hover{
     cursor: pointer;
